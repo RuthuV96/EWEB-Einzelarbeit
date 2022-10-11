@@ -1,0 +1,40 @@
+* {
+    text-align: center;
+}
+
+h1 {
+    color: red;
+}
+
+header img {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    filter: grayscale(100%) opacity(40%);
+}
+
+.photo_bg_container > .text_item {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    width: auto;
+    height: 10em;
+    margin: 0px;
+    background-color: yellow;
+}
+
+div .one {
+    display: flex;
+    width: auto;
+    height: 10em;
+    margin: 0px;
+    background-color: yellow;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
