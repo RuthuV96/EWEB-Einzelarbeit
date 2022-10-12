@@ -3,15 +3,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-    color: red;
-}
-
 header {
     height: auto;
 }
 
-header img {
+.photo_bg {
     position: relative;
     width: 100%;
     height: auto;
@@ -19,24 +15,14 @@ header img {
     filter: grayscale(100%) opacity(40%);
 }
 
-.photo_bg_container > .text_item {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.header_item {
+    position: absolute;
+    left: 50%;
     top: 50%;
-    
+    transform: translate(-50%, -50%);
 }
 
 main {
-    display: flex;
-    width: auto;
-    height: 10em;
-    margin: 0px;
-    background-color: yellow;
-}
-
-div .one {
     display: flex;
     width: auto;
     height: 10em;
