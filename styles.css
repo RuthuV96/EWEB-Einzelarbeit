@@ -4,31 +4,36 @@
 }
 
 header {
-    height: auto;
+    height: 100px;
 }
 
-.photo_bg {
+.top {
     position: relative;
+    text-align: center;
+    
+}
+
+.bg_photo {
     width: 100%;
-    height: auto;
-    margin: 0 auto;
+    /* height: 100%;
+    margin: 0 auto; */
     filter: grayscale(100%) opacity(40%);
 }
 
-.header_item {
+h1 {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-main {
+/* main {
     display: flex;
     width: auto;
     height: 10em;
     margin: 0px;
     background-color: yellow;
-}
+} */
 
 footer {
     background-color: black;
