@@ -4,6 +4,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+}
+
 header {
     position: relative;
     height: 80vh;
