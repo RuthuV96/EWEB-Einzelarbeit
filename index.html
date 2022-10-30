@@ -4,52 +4,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Paytone+One">
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
         <title>My Portfolio Page</title>
     </head>
     <body onload="typeWriterHeader()">
         <header id="header">
             <div class="header-text">
-                <!-- <h2>Hello, my name is</h2>
-                <h1>Welcome to my page!</h1>
-                <button onclick="typeWriter()">Click me</button> -->
-                <h1 id="number"></h1>
                 <h1 id="header1"></h1>
                 <h1 id="header2"></h1>
-
-                <script>
-                var i = 0;
-                var j = 0;
-                var txt1 = 'Hello, my name is Ruthu!';
-                var txt2 = 'Nice to meet you :)';
-                var speed = 50;
-
-                async function typeWriterHeader() {
-                    for (let character of txt1) {
-                        document.getElementById("header1").innerHTML += character;
-                        await new Promise(resolve=>setTimeout(resolve, speed));
-                    }
-                    for (let character of txt2) {
-                        document.getElementById("header2").innerHTML += character;
-                        await new Promise(resolve=>setTimeout(resolve, speed));
-                    }
-                        // if (i < txt1.length) {
-                        //     document.getElementById("header1").innerHTML += txt1.charAt(i);
-                        //     i++;
-                        //     setTimeout(typeWriterHeader, speed);
-                        // }
-                        // if (j < txt2.length) {
-                        //     document.getElementById("header2").innerHTML += txt2.charAt(i);
-                        //     j++;
-                        //     setTimeout(typeWriterHeader, speed);
-                        // }
-                    // }
-                }
-
-                function showNumber() {
-                    document.getElementById("number").innerHTML = txt2.charAt(0);
-                }
-
-                </script>
             </div>
         </header>
         <nav class="navbar-sticky">
