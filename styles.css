@@ -2,6 +2,7 @@
   text-align: center;
   font-family: Paytone One, sans-serif;
   scroll-behavior: smooth;
+  scroll-padding-top: 66px;
 }
 
 body {
@@ -54,7 +55,7 @@ header {
 
 #header1, #header2 {
   text-align: left;
-  font-size: 2em;
+  font-size: 2rem;
   width: 50vw;
   /* left: 10%;
   top: 40%;
@@ -81,38 +82,52 @@ header {
   padding: 1em;
 }
 
-@media screen and (max-width: 600px) {
-  .navbar-sticky {
-    flex-direction: column;
-  }
-    .navbar-sticky > p {
-    padding: 0.5em;
-  }
+main > * > * {
+  padding: 30px;
 }
 
-.top-container {
+main > * {
   display: flex;
   flex-direction: row;
   width: auto;
+}
+
+#top {
   background-color: yellow;
 }
 
-.top-container > p {
+#middle {
+  background-color: lightgreen;
+}
+
+/* .top-container > p {
   margin: 10px;
   padding: 20px;
   border: 5px;
   border-color: black;
-}
-
-.middle-container {
-  display: flex;
-  flex-direction: row;
-  width: auto;
-  background-color: lightgreen;
-}
+} */
 
 footer {
   background-color: black;
   color: white;
 }
 
+/* condition, when width smaller (i.g. mobile horizontal) */
+@media screen and (max-width: 600px) {
+  * {
+    scroll-padding-top: 150px;
+  }
+  .navbar-sticky {
+    flex-direction: column;
+  }
+  .navbar-sticky > p {
+    padding: 0.5em;
+  }
+  #header1, #header2 {
+    font-size: 1rem;
+  }
+  main > * {
+    display: flex;
+    flex-direction: column;
+  }
+}
