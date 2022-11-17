@@ -3,11 +3,12 @@
   font-family: Paytone One, sans-serif;
   scroll-behavior: smooth;
   scroll-padding-top: 66px;
+  font-size: 1rem;
 }
 
 body {
   margin: 0;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 header {
@@ -43,7 +44,6 @@ header {
 
 .box {
   position: relative;
-  width: 100vw;
   height: auto;
 }
 
@@ -51,11 +51,14 @@ header {
   position: absolute;
   text-align: left;
   top: 30%;
+  /* padding-left: 5%;
+  padding-right: 10%;
+  margin-right: 10%; */
 }
 
 #header1, #header2 {
   text-align: left;
-  font-size: 2rem;
+  font-size: 5vw;
   width: 50vw;
   /* left: 10%;
   top: 40%;
@@ -123,9 +126,9 @@ footer {
   .navbar-sticky > p {
     padding: 0.5em;
   }
-  #header1, #header2 {
+  /* #header1, #header2 {
     font-size: 1rem;
-  }
+  } */
   main > * {
     display: flex;
     flex-direction: column;
