@@ -64,6 +64,7 @@ body {
   width: auto;
   padding: auto;
   background-color: lightpink;
+  z-index: 100;
 }
 
 .navbar-sticky > p {
@@ -80,7 +81,6 @@ body {
 main > * {
   padding: 30px;
   display: flex;
-  flex-direction: row;
   width: auto;
 }
 
@@ -91,7 +91,8 @@ main > * {
 } */
 
 .about {
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
 }
 
 #avatar {
@@ -106,6 +107,82 @@ main > * {
 #top {
   background-color: yellow;
 }
+
+/* language-bars section */
+/* source: https://www.foolishdeveloper.com/2021/08/animated-skills-bar-html-css.html */
+.language-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.language-bar {
+  position: relative;
+  border: 2px solid #0d96e0;
+  border-radius: 20px;
+}
+
+.language-bar div {
+  position: relative;
+  width: 0;
+  height: 9px;
+  border-radius: 10px;
+  background-color: #0d96e0;
+}
+
+.language-skills:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/* filling every bar with "value" */
+#tamil-bar {
+  animation: tamil-fill 2s forwards;
+}
+@keyframes tamil-fill {
+  100% {
+    width: 100%;
+  }
+}
+
+#deu-bar {
+  animation: deu-fill 2s forwards;
+  content-visibility: auto;
+}
+@keyframes deu-fill {
+  100% {
+    width: 100%;
+  }
+}
+
+#eng-bar {
+  animation: eng-fill 2s forwards;
+}
+@keyframes eng-fill {
+  100% {
+    width: 80%;
+  }
+}
+
+#fra-bar {
+  animation: fra-fill 2s forwards;
+}
+@keyframes fra-fill {
+  100% {
+    width: 50%;
+  }
+}
+
+#ita-bar {
+  animation: ita-fill 2s forwards;
+}
+@keyframes ita-fill {
+  100% {
+    width: 20%;
+  }
+}
+
+/* language-bars section ends*/
 
 #middle {
   background-color: lightgreen;
