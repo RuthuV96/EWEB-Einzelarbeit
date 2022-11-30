@@ -182,6 +182,18 @@ main > * {
   }
 }
 
+#test {
+  background-color: orange;
+}
+
+.language-bar {
+  display: none;
+}
+
+.language-bar-display {
+  display: initial;
+}
+
 /* language-bars section ends*/
 
 #middle {
