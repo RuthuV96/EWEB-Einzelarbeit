@@ -136,7 +136,7 @@ main > * {
 }
 
 /* filling every bar with "value" */
-#tamil-bar {
+.animate {
   animation: tamil-fill 2s forwards;
 }
 @keyframes tamil-fill {
@@ -182,17 +182,30 @@ main > * {
   }
 }
 
-#test {
+.colortest {
   background-color: orange;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.language-bar {
+.colortest > * {
+  margin: 30px;
+}
+
+.getJoke {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+/* .language-bar {
   display: none;
 }
 
 .language-bar-display {
   display: initial;
-}
+} */
 
 /* language-bars section ends*/
 
