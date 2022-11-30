@@ -125,7 +125,8 @@ main > * {
 
 .language-bar div {
   position: relative;
-  width: 0;
+  max-width: 0;
+  transition: max-width 2s ease;
   height: 9px;
   border-radius: 10px;
   background-color: #0d96e0;
@@ -136,50 +137,8 @@ main > * {
 }
 
 /* filling every bar with "value" */
-.animate {
-  animation: tamil-fill 2s forwards;
-}
-@keyframes tamil-fill {
-  100% {
-    width: 100%;
-  }
-}
-
-#deu-bar {
-  animation: deu-fill 2s forwards;
-  content-visibility: auto;
-}
-@keyframes deu-fill {
-  100% {
-    width: 100%;
-  }
-}
-
-#eng-bar {
-  animation: eng-fill 2s forwards;
-}
-@keyframes eng-fill {
-  100% {
-    width: 80%;
-  }
-}
-
-#fra-bar {
-  animation: fra-fill 2s forwards;
-}
-@keyframes fra-fill {
-  100% {
-    width: 50%;
-  }
-}
-
-#ita-bar {
-  animation: ita-fill 2s forwards;
-}
-@keyframes ita-fill {
-  100% {
-    width: 20%;
-  }
+.language-bar div.animate {
+  max-width: 100%;
 }
 
 .colortest {
