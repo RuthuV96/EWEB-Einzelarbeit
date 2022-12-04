@@ -90,14 +90,18 @@ jokeButton.addEventListener("click", handleClick);
 // let observer = new IntersectionObserver(callback, options);
 
 
-const element = document.getElementById("tamil-bar");
-const bounding = element.getBoundingClientRect();
 
-window.addEventListener("scroll", function(event){
-  if (bounding.top >= 0 && bounding.left >= 0 && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) && bounding.right <= (window.innerWidth || document.documentElement.clientWidth)) {
-    element.classList.add("animate");
-    console.log("slfj");
+const elements = document.querySelectorAll(".language-bar div");
+
+window.addEventListener("scroll", function () {
+  for (const element of elements) {
+    const bounding = element.getBoundingClientRect();
+    if (
+        bounding.top >= 0 && bounding.bottom <= window.innerHeight
+    ) {
+      element.classList.add("animate");
+    } else {
+      element.classList.remove("animate");
+    }
   }
 })
-
-console.log(bounding);
