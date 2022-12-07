@@ -45,8 +45,12 @@ async function fetchJoke() {
 }
 
 async function handleClick() {
+  jokeHolder.classList.remove("animate__animated");
+  jokeHolder.classList.remove("animate__fadeIn");
   const { joke } = await fetchJoke();
   jokeHolder.textContent = joke;
+  jokeHolder.classList.add("animate__animated");
+  jokeHolder.classList.add("animate__fadeIn");
 }
 
 console.log(document.querySelector(".getJoke"));
@@ -59,13 +63,16 @@ jokeButton.addEventListener("click", handleClick);
 //animation for Language Skills bars
 const elements = document.querySelectorAll(".language-bar div");
 
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll",  function () {
   for (const element of elements) {
     const bounding = element.getBoundingClientRect();
     if (
         bounding.top >= 0 && bounding.bottom <= window.innerHeight
     ) {
-      setTimeout(element.classList.add("animate"), 2000);
+       new Promise(resolve=>setTimeout(() => {
+        element.classList.add("animate")
+        resolve()
+      }, 1000));
     } else {
       element.classList.remove("animate");
     }
