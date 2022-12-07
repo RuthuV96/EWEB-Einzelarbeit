@@ -141,13 +141,13 @@ main > * {
   max-width: 100%;
 }
 
-.colortest {
+.dadjoke-api {
   background-color: orange;
   justify-content: center;
   flex-direction: column;
 }
 
-.colortest > * {
+.dadjoke-api > * {
   margin: 30px;
 }
 
@@ -156,6 +156,10 @@ main > * {
   margin-right: 20vw;
   padding-top: 1vh;
   padding-bottom: 1vh;
+}
+
+.middle-container {
+  width: inherit;
 }
 
 /* .language-bar {

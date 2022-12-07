@@ -56,6 +56,7 @@ jokeButton.addEventListener("click", handleClick);
 
 
 
+//animation for Language Skills bars
 const elements = document.querySelectorAll(".language-bar div");
 
 window.addEventListener("scroll", function () {
@@ -64,9 +65,19 @@ window.addEventListener("scroll", function () {
     if (
         bounding.top >= 0 && bounding.bottom <= window.innerHeight
     ) {
-      element.classList.add("animate");
+      setTimeout(element.classList.add("animate"), 2000);
     } else {
       element.classList.remove("animate");
     }
   }
 })
+
+
+// //Twitter
+// twttr.widgets.createTimeline(
+//   {
+//     sourceType: "profile",
+//     screenName: "TwitterDev"
+//   },
+//   document.getElementById("container")
+// );
