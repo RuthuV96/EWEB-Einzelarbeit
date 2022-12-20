@@ -153,15 +153,37 @@ source: https://wesbos.com/javascript/13-ajax-and-fetching-data/76-dad-jokes */
   background-color: lightgreen;
 }
 
-
-
 #social {
   /* border-radius: 50%; */
   width: 50vw;
-  border-style: solid;
+  /* border-style: solid;
   border-color: black;
-  box-shadow: 0 0 50px black;
+  box-shadow: 0 0 50px black; */
   margin: 20px;
+}
+
+.social_links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.social_icon_ordering {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.social-icons {
+  position: relative;
+  display: inline-block;
+  filter: grayscale(100%);
+  width: 80px;
+  margin: auto;
+}
+
+.social-icons:hover {
+  filter: grayscale(0%);
 }
 
 .twt {
@@ -248,7 +270,7 @@ footer {
 /* conditions, when page width smaller (i.g. mobile horizontal) */
 @media screen and (max-width: 600px) {
   * {
-    scroll-padding-top: 150px;
+    scroll-padding-top: 200px;
   }
   .navbar-sticky {
     flex-direction: column;
@@ -265,5 +287,9 @@ footer {
   }
   #avatar {
     width: 120px;
+  }
+  .social_links {
+    display: flex;
+    flex-direction: column;
   }
 }
