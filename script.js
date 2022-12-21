@@ -26,12 +26,12 @@ function showNumber() {
 const jokeButton = document.querySelector(".getJoke");
 const jokeHolder = document.querySelector(".joke");
 
-const buttonText = [
-  "Ugh.",
-  "OMG...",
-  "Seriously?!",
-  "Please stop!",
-];
+// const buttonText = [
+//   "Ugh.",
+//   "OMG...",
+//   "Seriously?!",
+//   "Please stop!",
+// ];
 
 async function fetchJoke() {
   const response = await fetch("https://icanhazdadjoke.com", {
