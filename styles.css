@@ -1,7 +1,6 @@
 /* general stuff */
 * {
   text-align: center;
-  /* font-family: Paytone One, sans-serif; */
   font-family: Ubuntu, sans-serif;
   scroll-behavior: smooth;
   scroll-padding-top: 66px;
@@ -43,25 +42,18 @@ body {
 
 .box {
   position: relative;
-  /* height: auto; */
 }
 
 .header-text {
   position: absolute;
   text-align: left;
   top: 30%;
-  /* padding-left: 5%;
-  padding-right: 10%;
-  margin-right: 10%; */
 }
 
 #header1, #header2 {
   text-align: left;
   font-size: 5vw;
   width: 50vw;
-  /* left: 10%;
-  top: 40%;
-  transform: translate(-50%, -50%); */
 }
 
 /* everything in navigation bar */
@@ -159,17 +151,14 @@ source: https://wesbos.com/javascript/13-ajax-and-fetching-data/76-dad-jokes */
   padding-top: 1vh;
   padding-bottom: 1vh;
 }
+/* Dad Joke section ends */
 
 .middle-container {
   background-color: #F0E1AA;
 }
 
 #social {
-  /* border-radius: 50%; */
   width: 50vw;
-  /* border-style: solid;
-  border-color: black;
-  box-shadow: 0 0 50px black; */
   margin: 20px;
 }
 
@@ -197,82 +186,6 @@ source: https://wesbos.com/javascript/13-ajax-and-fetching-data/76-dad-jokes */
   filter: grayscale(0%);
 }
 
-.twt {
-  width: 50px;
-  text-align: center;
-  padding: 0px 50px 0px 50px;
-}
-
-@media screen and (min-width: 600px) {
-  /* .middle-container {
-    flex-direction: column;
-    padding-left: 150px;
-    padding-right: 150px;
-  } */
-  .twt {
-    width: 50px;
-    text-align: center;
-    padding: 0px 50px 0px 50px;
-  }
-}
-
-/* .top-container > p {
-  margin: 10px;
-  padding: 20px;
-  border: 5px;
-  border-color: black;
-} */
-
-/* .blockquote {
-  max-width: 600px;
-  margin: 10px 30px;
-  padding: 25px;
-  background: #f8fffe;
-  border: 1px solid #b0d2cb;
-  color: #0b4237;
-  box-sizing: border-box;
-}
-.blockquote--bordered {
-  border-left-width: 10px;
-}
-.blockquote--quoted::before {
-  content: "\201c";
-  font-size: 100px;
-  color: #009578;
-  display: block;
-}
-.blockquote__text {
-  font-family: 'Gelasio', serif;
-  font-style: italic;
-  font-size: 1.15em;
-  line-height: 1.5;
-  margin: 0;
-}
-.blockquote__text--credit {
-  font-weight: bold;
-  font-style: normal;
-  text-align: right;
-} */
-
-/* blockquote {
-  background: #f9f9f9;
-  border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
-}
-blockquote:before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-blockquote p {
-  display: inline;
-} */
-
 footer > * {
   background-color: #85642F;
   color: white;
@@ -292,9 +205,6 @@ footer > * {
   .navbar-sticky > p {
     padding: 0.5em;
   }
-  /* #header1, #header2 {
-    font-size: 1rem;
-  } */
   main > * {
     display: flex;
     flex-direction: column;
@@ -307,3 +217,4 @@ footer > * {
     flex-direction: column;
   }
 }
+
