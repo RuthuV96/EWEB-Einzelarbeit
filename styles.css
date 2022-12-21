@@ -1,10 +1,21 @@
 /* general stuff */
 * {
   text-align: center;
-  font-family: Paytone One, sans-serif;
+  /* font-family: Paytone One, sans-serif; */
+  font-family: Ubuntu, sans-serif;
   scroll-behavior: smooth;
   scroll-padding-top: 66px;
   font-size: 1rem;
+}
+
+a:link, a:visited {
+  color: #F0E1AA;
+}
+a:hover {
+  color: #F0E1AA;
+}
+a:active {
+  color: #F0E1AA;
 }
 
 li, ul {
@@ -62,7 +73,7 @@ body {
   top: 0;
   width: auto;
   padding: auto;
-  background-color: lightpink;
+  background-color: #B52E28;
   z-index: 100;
 }
 
@@ -93,7 +104,7 @@ main > * {
 }
 
 #top {
-  background-color: yellow;
+  background-color: #F0E1AA;
 }
 
 /* language-bars section */
@@ -117,7 +128,7 @@ main > * {
   transition: max-width 2s ease;
   height: 9px;
   border-radius: 10px;
-  background-color: black;
+  background-color: #85642F;
 }
 
 .language-skills:not(:last-child) {
@@ -133,7 +144,7 @@ main > * {
 /* Dad Joke formatting
 source: https://wesbos.com/javascript/13-ajax-and-fetching-data/76-dad-jokes */
 .dadjoke-api {
-  background-color: orange;
+  background-color: #DCB567;
   justify-content: center;
   flex-direction: column;
 }
@@ -150,7 +161,7 @@ source: https://wesbos.com/javascript/13-ajax-and-fetching-data/76-dad-jokes */
 }
 
 .middle-container {
-  background-color: lightgreen;
+  background-color: #F0E1AA;
 }
 
 #social {
@@ -243,7 +254,7 @@ source: https://wesbos.com/javascript/13-ajax-and-fetching-data/76-dad-jokes */
   text-align: right;
 } */
 
-blockquote {
+/* blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
@@ -260,11 +271,14 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
-}
+} */
 
-footer {
-  background-color: black;
+footer > * {
+  background-color: #85642F;
   color: white;
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* conditions, when page width smaller (i.g. mobile horizontal) */

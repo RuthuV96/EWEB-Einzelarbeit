@@ -46,18 +46,17 @@ async function fetchJoke() {
 
 async function handleClick() {
   jokeHolder.classList.remove("animate__animated");
-  jokeHolder.classList.remove("animate__fadeIn");
+  jokeHolder.classList.remove("animate__fadeInDown");
   const { joke } = await fetchJoke();
   jokeHolder.textContent = joke;
   jokeHolder.classList.add("animate__animated");
-  jokeHolder.classList.add("animate__fadeIn");
+  jokeHolder.classList.add("animate__fadeInDown");
 }
 
 console.log(document.querySelector(".getJoke"));
 console.log(jokeHolder);
 
 jokeButton.addEventListener("click", handleClick);
-
 
 
 //animation for Language Skills bars
@@ -72,9 +71,9 @@ window.addEventListener("scroll",  function () {
        new Promise(resolve=>setTimeout(() => {
         element.classList.add("animate")
         resolve()
-      }, 1000));
+      }, 500));
     } else {
-      element.classList.remove("animate");
+      // element.classList.remove("animate");
     }
   }
 })
